@@ -1,0 +1,10 @@
+dev/
+node_modules/
+bower_components/
+public/
+upload/images/*
+tmpUpload/*
+.idea/
+data_seeds/
+.idea/
+.DS_STORE
