@@ -1,0 +1,14 @@
+build_image: shippableimages/ubuntu1404_nodejs
+
+laguage: node_js
+
+node_js:
+    - 0.10.25
+
+before_install:
+    - echo "Buolding">> /dev/null
+
+script:
+    - npm install
+    - bower install
+    - grunt build
