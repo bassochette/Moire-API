@@ -1,5 +1,6 @@
 Moire API
 =========
+[![Build Status](https://api.shippable.com/projects/551416e25ab6cc1352ac0379/badge?branchName=master)](https://app.shippable.com/projects/551416e25ab6cc1352ac0379/builds/latest)
 
 Demarrage:
 ----------

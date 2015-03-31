@@ -35,13 +35,18 @@ app.configure(function(){
 
     app.use(express.logger('dev'));
     app.use(express.bodyParser({uploadDir:'./tmpUpload'}));
-    app.use(express.methodOverride());
-    app.use(express.session({ secret: 'napoleon' }));
+    // app.use(express.methodOverride());
+    // app.use(express.session({ secret: 'napoleon' }));
     app.use(express.errorHandler());
 
     // GNU Terry Pratchett
     app.use(function(req, res, next){
         res.set('X-Clacks-Overhead', 'GNU Terry Pratchett');
+        next();
+    });
+
+    app.use(function(req, res, next){
+        res.set('Access-Control-Allow-Origin', 'http://museion.dev:8888');
         next();
     });
 
